@@ -15,6 +15,7 @@
 		82495C432553B8B6004D7024 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82495C412553B8B6004D7024 /* LaunchScreen.storyboard */; };
 		82495C4E2553B8B6004D7024 /* CollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82495C4D2553B8B6004D7024 /* CollectionViewTests.swift */; };
 		82495C592553B8B6004D7024 /* CollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82495C582553B8B6004D7024 /* CollectionViewUITests.swift */; };
+		82A325222557A430001BF82F /* CustomToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A325212557A430001BF82F /* CustomToolbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		82495C542553B8B6004D7024 /* CollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82495C582553B8B6004D7024 /* CollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewUITests.swift; sourceTree = "<group>"; };
 		82495C5A2553B8B6004D7024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82A325212557A430001BF82F /* CustomToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToolbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				82495C362553B8B5004D7024 /* AppDelegate.swift */,
 				82495C382553B8B5004D7024 /* SceneDelegate.swift */,
 				82495C3A2553B8B5004D7024 /* ViewController.swift */,
+				82A325212557A430001BF82F /* CustomToolbar.swift */,
 				82495C3C2553B8B5004D7024 /* Main.storyboard */,
 				82495C3F2553B8B6004D7024 /* Assets.xcassets */,
 				82495C412553B8B6004D7024 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82A325222557A430001BF82F /* CustomToolbar.swift in Sources */,
 				82495C3B2553B8B5004D7024 /* ViewController.swift in Sources */,
 				82495C372553B8B5004D7024 /* AppDelegate.swift in Sources */,
 				82495C392553B8B5004D7024 /* SceneDelegate.swift in Sources */,
