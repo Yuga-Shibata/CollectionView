@@ -24,6 +24,16 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         // titleLabelの配置
         titleLabel.frame = CGRect(x: view.frame.size.width / 2 - (titleLabel.frame.height / 2), y: statusBarHeight, width: view.frame.size.width * 0.7, height: statusBarHeight)
         titleLabel.backgroundColor = UIColor.magenta
+        // backButton
+        backButton.frame = CGRect(x: 0, y: statusBarHeight, width: statusBarHeight, height: statusBarHeight)
+        backButton.setTitle("◀", for: .normal)
+        backButton.backgroundColor = UIColor.green
+        // nextButtonの配置
+        nextButton.frame = CGRect(x: view.frame.size.width - nextButton.frame.width, y: statusBarHeight, width: statusBarHeight, height: statusBarHeight)
+        nextButton.setTitle("▶", for: .normal)
+        nextButton.backgroundColor = UIColor.green
+
+
         // toolbarをインスタンス化
         let toolbarHeight = view.frame.size.height * 0.1
         let toolbar = CustomToolbar(frame: CGRect(x: 0, y: view.bounds.maxY - toolbarHeight, width: view.frame.size.height, height: toolbarHeight))
