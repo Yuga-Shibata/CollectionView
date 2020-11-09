@@ -13,7 +13,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     override func viewDidAppear(_ animated: Bool) {
            super.viewDidAppear(animated)
-     
+            let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+            let statusBarHeight = window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0 // 0
+            print(statusBarHeight)
            // Toolbarを表示したい場合
            self.navigationController?.setToolbarHidden(false, animated: false)
     }
@@ -30,7 +32,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         // collectionViewの配置
         collectionView.backgroundColor = .black
         let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
-        let statusBarHeight = window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
+        let statusBarHeight = window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0 // 0
         print(statusBarHeight)
 //        statusbar?.statusBarFrame
         collectionView.frame = CGRect(x: 0, y: statusBarHeight, width: view.frame.size.width, height: view.frame.size.height - statusBarHeight - view.frame.size.height * 0.1)
